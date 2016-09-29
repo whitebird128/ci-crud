@@ -22,7 +22,7 @@
 			?>
 				<tr>
 					<td><?php echo $primo->primo_name;?></td>
-					<td><?php echo $primo->primo_des;?></td>
+					<td><?php echo auto_link($primo->primo_des);?></td>
 					<td>
 						<a href="<?php echo base_url('primo/edit?primo_id=') . $primo->id;?>">Edit</a>&nbsp;
 						<a href="<?php echo base_url('primo/delete?primo_id=') . $primo->id;?>" onclick="if(!confirm('Really?')) return false;">Delete</a>
