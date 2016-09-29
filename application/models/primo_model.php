@@ -11,7 +11,7 @@ class Primo_model extends CI_Model
 		return $query->result();
 	}
 
-	// insert primo data into primo table
+	// insert primo data into primo table.
 	public function insert_primo($data) {
 		$this->db->insert('primo', $data);
 	}
