@@ -1,0 +1,99 @@
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:100);
+
+body {
+	font: 90%/1.45em "Helvetica Neue", HelveticaNeue, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #333;
+	background-color: #fff;
+}
+
+body.dt-example-bootstrap {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+}
+
+div.container {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Raleway', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+	font-size: 3em;
+	line-height: 1em;
+}
+
+h1 span {
+	font-size: 0.5em;
+	line-height: 1em;
+}
+
+a {
+	cursor: pointer;
+	color: #3174c7;
+	text-decoration: none;
+}
+
+p > a:hover {
+	text-decoration: underline;
+}
+
+.clear {
+	clear: both;
+	height: 0;
+}
+
+
+div.footer {
+	position: relative;
+	margin-top: 3em;
+	border-top: 1px solid #999;
+	background-color: #eee;
+}
+
+div.box {
+	overflow: auto;
+	height: 8em;
+	padding: 1em;
+	color: #444;
+	background-color: #fcfcfc;
+	border: 1px solid #e0e0e0;
+	margin-bottom: 2em;
+}
+
+@media only screen and (max-width : 979px) {
+	div.container,
+	div.footer {
+		padding: 0 1em;
+	}
+}
+
+@media
+	screen and (max-width : 767px),
+	screen and (max-width : 768px) and (orientation: portrait) {
+	div.info {
+		-webkit-column-count: 1;
+		   -moz-column-count: 1;
+		    -ms-column-count: 1;
+		     -o-column-count: 1;
+		column-count: 1;
+	}
+
+	div.toc {
+		-webkit-column-count: 1;
+		   -moz-column-count: 1;
+		    -ms-column-count: 1;
+		     -o-column-count: 1;
+		column-count: 1;
+	}
+
+	h1 span {
+		display: block;
+	}
+}
+
