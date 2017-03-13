@@ -12,7 +12,7 @@ class Primo extends CI_Controller {
 	}
 
 	/**
-	 * Index Page for this controller.
+	 * Index Page for this controller
 	 * get all list of primo
 	 */
 	public function index()
@@ -21,15 +21,13 @@ class Primo extends CI_Controller {
 		$data['title'] = "The List of Primos";
 		$data['primo_list'] = $this->primo_model->get_primo_list();
 
-		// print_r($data['primo_list']); exit;
-
 		$this->load->view('header', $data);
 		$this->load->view('primo/list', $data);
 		$this->load->view('footer', $data);
 	}
 
 	/**
-	 * This is the action for add page.
+	 * This is the action for add page
 	 * localhost/ci-crud/primo/add
 	*/
 	public function add(){
@@ -42,7 +40,7 @@ class Primo extends CI_Controller {
 	} 
 	
 	/**
-	 * This is the action to add primo.
+	 * This is the action to add primo
 	 * redirect to localhost/ci-crud/primo
 	*/
 
@@ -62,7 +60,7 @@ class Primo extends CI_Controller {
 	}
 
 	/**
-	 * This is the action for edit page.
+	 * This is the action for edit page
 	 * localhost/ci-crud/primo/edit/{primo_id}
 	*/
 	public function edit(){
@@ -81,7 +79,7 @@ class Primo extends CI_Controller {
 	} 
 	
 	/**
-	 * This is the action to add primo.
+	 * This is the action to add primo
 	 * redirect to localhost/ci-crud/primo
 	*/
 
@@ -102,7 +100,7 @@ class Primo extends CI_Controller {
 	}
 
 	/**
-	 * This is the action to delete primo.
+	 * This is the action to delete primo
 	 * redirect to localhost/ci-crud/primo
 	*/
 
