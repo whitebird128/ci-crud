@@ -5,9 +5,11 @@
 		<label>Primo Name</label>
 		<input type="text" name="primo_name" value="<?php echo $primo->primo_name;?>" />
 <br /><br />
+<hr />
 		<label>Primo Description</label>
 		<textarea name="primo_des"><?php echo $primo->primo_des;?></textarea>
 <br /><br />
+<hr />
 		<input type="submit" value="Update" />
 
 	</form>
