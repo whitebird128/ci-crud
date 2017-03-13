@@ -7,7 +7,9 @@ class Primo_model extends CI_Model
 	public function get_primo_list() {
 		$this->db->select('*');
 		$this->db->from('primo');
+
 		$query = $this->db->get();
+
 		return $query->result();
 	}
 
@@ -21,20 +23,27 @@ class Primo_model extends CI_Model
 		$this->db->select('*');
 		$this->db->from('primo');
 		$this->db->where('primo.id', $primo_id);
+
 		$query = $this->db->get();
+
 		return $query->row();
 	}
 
 	// update primo data by $data and $primo_id
 	public function update_primo($data, $primo_id){
 		$this->db->where('id', $primo_id);
+
 		$this->db->update('primo', $data, $where);
+		
+		return true;
 	}
 
 	// Delete primo data by id
 	public function delete_primo($primo_id) {
 		$this->db->where('id', $primo_id);
       	$this->db->delete('primo'); 
+
+      	return true;
 	}
 }
 
